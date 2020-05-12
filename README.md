@@ -10,3 +10,4 @@ TODO:
 4. Update colors with new models.
 5. Make full color detection.
 6. Convert from .py to .exe
+7. Make for all resolutions.
