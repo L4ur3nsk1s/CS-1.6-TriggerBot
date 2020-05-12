@@ -31,11 +31,10 @@ i = 10
 
 currentMouseX, currentMouseY = pyautogui.position()
 
-#Using while 10 to not get infinite loop
+# Using while 10 to not get infinite loop
 while 10 > 0:
     i = i - 1
     pixel_get_color_center = ahk.pixel_get_color(center[0], center[1])
-    print(win)
     pixel_search = ahk.pixel_search(
         colors_t, upper_bound=top_left, lower_bound=bottom_right)
 if pixel_search == colors_t:

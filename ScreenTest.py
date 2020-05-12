@@ -4,11 +4,9 @@ import pyautogui
 from ahk.window import Window
 
 
-
 ahk = AHK()
 
 W, H = pyautogui.size()
-
 
 
 center = (W/2, H/2)
