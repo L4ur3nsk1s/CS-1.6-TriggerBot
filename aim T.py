@@ -35,8 +35,8 @@ pixel_get_mouse_color = ahk.pixel_get_color(
 i = 10
 
 currentMouseX, currentMouseY = pyautogui.position()
- win = ahk.find_window(title=b'Counter-Strike') # Find the opened window
-# win.activate()
+ #win = ahk.find_window(title=b'Counter-Strike') # Find the opened window
+ # win.activate()
 
 while 10 > 0:
     i = i - 1
