@@ -26,8 +26,7 @@ pixel_search = ahk.pixel_search(
 
 pixel_get_color_center = ahk.pixel_get_color(center[0], center[1])
 
-pixel_get_mouse_color = ahk.pixel_get_color(
-    mouse_position[0], mouse_position[1])
+
 i = 10
 
 currentMouseX, currentMouseY = pyautogui.position()
