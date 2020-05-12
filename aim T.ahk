@@ -1,10 +1,4 @@
-﻿c::
-    MouseGetPos, MouseX, MouseY
-    PixelGetColor, c, %MouseX%, %MouseY%
-
-    MsgBox, %c%
-
-
+﻿
     i::
 
         Loop {
