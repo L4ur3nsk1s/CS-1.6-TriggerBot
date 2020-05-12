@@ -16,8 +16,8 @@ center = (W/2, H/2)
 centerx_m10 = center[0] - 10
 centery_m10 = center[1] - 10
 
-centerx_p10 = center[0] + 20
-centery_p10 = center[1] + 20
+centerx_p10 = center[0] + 10
+centery_p10 = center[1] + 10
 
 up = centerx_m10, centery_m10
 down = centerx_p10, centery_p10
