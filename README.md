@@ -7,3 +7,4 @@ CS 1.6 TriggerBot using python and ahk, pyautogui modules
 3. Rewrite everything from ahk to python.
 4. Change models to better.
 5. Make full color detection.
+ 
