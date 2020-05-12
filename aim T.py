@@ -4,11 +4,7 @@ import pyautogui
 from ahk.window import Window
 
 ahk = AHK()
-colors_t = ['0xA40A04', '0x950804', '0x730404', '0x870404', '0x510504', '0x760404',
-            '0x660404',
-            '0x370404',
-            '0x280404',
-            '0x530404']
+colors_t = ['new colors']
 
 
 W, H = pyautogui.size()
@@ -35,9 +31,8 @@ pixel_get_mouse_color = ahk.pixel_get_color(
 i = 10
 
 currentMouseX, currentMouseY = pyautogui.position()
- #win = ahk.find_window(title=b'Counter-Strike') # Find the opened window
- # win.activate()
 
+#Using while 10 to not get infinite loop
 while 10 > 0:
     i = i - 1
     pixel_get_color_center = ahk.pixel_get_color(center[0], center[1])
@@ -46,6 +41,5 @@ while 10 > 0:
         colors_t, upper_bound=top_left, lower_bound=bottom_right)
 if pixel_search == colors_t:
     print(pixel_get_color_center)
-
     ahk.sound_beep(frequency=880, duration=100)
     ahk.click()
