@@ -5,7 +5,7 @@ from ahk.window import Window
 
 ahk = AHK()
 colors_t = ['new colors']
-
+colors_ct = ['new colors']
 
 W, H = pyautogui.size()
 
@@ -21,17 +21,19 @@ center = (W/2, H/2)
 centerx = center[0]
 centery = center[1]
 
+team = 1  # Search for Terrorist colors
+# team = 0 #Search for Counter Terrorist colors
+
 pixel_search = ahk.pixel_search(
     colors_t, upper_bound=top_left, lower_bound=bottom_right)
 
 pixel_get_color_center = ahk.pixel_get_color(center[0], center[1])
 
 
-i = 10
-
 currentMouseX, currentMouseY = pyautogui.position()
 
 # Using while 10 to not get infinite loop
+i = 10
 while 10 > 0:
     i = i - 1
     pixel_get_color_center = ahk.pixel_get_color(center[0], center[1])
