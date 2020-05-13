@@ -30,16 +30,12 @@ pixel_search = ahk.pixel_search(
 pixel_get_color_center = ahk.pixel_get_color(center[0], center[1])
 
 
-currentMouseX, currentMouseY = pyautogui.position()
-
-# Using while 10 to not get infinite loop
-i = 10
-while 10 > 0:
-    i = i - 1
+# Using while team = 1 to  get infinite loop
+while team is 1:
     pixel_get_color_center = ahk.pixel_get_color(center[0], center[1])
     pixel_search = ahk.pixel_search(
         colors_t, upper_bound=top_left, lower_bound=bottom_right)
-if pixel_search == colors_t:
-    print(pixel_get_color_center)
-    ahk.sound_beep(frequency=880, duration=100)
-    ahk.click()
+    if pixel_search == colors_t:
+        print(pixel_get_color_center)
+        ahk.sound_beep(frequency=880, duration=100)
+        ahk.click()
